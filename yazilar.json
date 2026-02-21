@@ -1,79 +1,42 @@
-<div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop');"></div>
-                <div class="project-info">
-                    <span class="project-tag tag-web">Web Projesi</span>
-                    <h3>StajFlow</h3>
-                    <p>Üniversite öğrencilerinin staj yeri atamalarını ve süreçlerini yöneten, hocalarla öğrencileri bir araya getiren modern web otomasyonu. Backend ve frontend mimarisiyle geliştirilmektedir.</p>
-                    <div class="project-links">
-                        <a href="https://stajflow.vercel.app" target="_blank" class="btn-demo"><i class="fas fa-external-link-alt"></i> Canlı Demo</a>
-                        <a href="https://github.com/codeoguz/StajFlow" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop');"></div>
-                <div class="project-info">
-                    <span class="project-tag tag-tool">Masaüstü & Veritabanı</span>
-                    <h3>Öğrenci Bilgi Sistemi (OBS)</h3>
-                    <p>C# kullanılarak geliştirilmiş, detaylı veritabanı mimarisine sahip kapsamlı masaüstü bilgi sistemi. Öğrenci, not ve ders kayıt işlemlerini SQL Server üzerinde güvenle yönetir.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/codeoguz/OBS-Sistemi" target="_blank" class="btn-demo"><i class="fas fa-desktop"></i> İncele</a>
-                        <a href="https://github.com/codeoguz/OBS-Sistemi" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1556438064-2d7646166914?q=80&w=600&auto=format&fit=crop');"></div>
-                <div class="project-info">
-                    <span class="project-tag tag-game">Oyun Geliştirme</span>
-                    <h3>3D Stack (Kule) Oyunu</h3>
-                    <p>Unity oyun motoru ve C# kullanılarak geliştirilen, oyuncuların blokları üst üste en dengeli şekilde dizmeye çalıştığı, dinamik fiziklere sahip 3D mobil arcade oyunu.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/codeoguz/3D-Stack-Game" target="_blank" class="btn-demo"><i class="fab fa-google-play"></i> İncele</a>
-                        <a href="https://github.com/codeoguz/3D-Stack-Game" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-                <div class="project-info">
-                    <span class="project-tag tag-tool">Araç & Verimlilik</span>
-                    <h3>Kişisel Pomodoro Sayacı</h3>
-                    <p>DGS ve yoğun proje dönemleri için PowerShell kullanılarak sıfırdan kodlanmış, özel odaklanma aralıkları sunan masaüstü zaman yönetimi aracı.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/codeoguz/Pomodoro-Timer" target="_blank" class="btn-demo"><i class="fas fa-download"></i> İndir</a>
-                        <a href="https://github.com/codeoguz/Pomodoro-Timer" target="_blank" class="btn-github"><i class="fab fa-github"></i> Script</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-                <div class="project-info">
-                    <span class="project-tag tag-web">Web Deneyimi</span>
-                    <h3>İnteraktif Dijital Hediye Serisi</h3>
-                    <p>Özel günleri dijitalleştirmek amacıyla HTML/CSS ve JS ile geliştirilmiş, 10 farklı interaktif ve kişiselleştirilmiş web tabanlı dijital hediye portfolyosu.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/codeoguz/Digital-Gifts" target="_blank" class="btn-demo"><i class="fas fa-external-link-alt"></i> İncele</a>
-                        <a href="https://github.com/codeoguz/Digital-Gifts" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
-                <div class="project-info">
-                    <span class="project-tag tag-web">Web Projesi</span>
-                    <h3>Geliştirici Günlüğü & Portfolyo</h3>
-                    <p>Şu an incelemekte olduğunuz bu web sitesi. Tamamen responsive, karanlık neon temalı, dinamik JSON veritabanı okuyabilen modern bir frontend mimarisi ile kodlandı.</p>
-                    <div class="project-links">
-                        <a href="index.html" class="btn-demo"><i class="fas fa-home"></i> İncele</a>
-                        <a href="https://github.com/codeoguz/dev-blog" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+[
+  {
+    "id": 1,
+    "kategori": "Haber",
+    "resim": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop",
+    "baslik": "StajFlow Projesi: Üniversite Staj Süreçlerini Dijitalleştiriyoruz",
+    "ozet": "Geliştirmekte olduğumuz StajFlow projesinin çıkış hikayesi, mimarisi ve üniversitelerdeki staj atama sorunlarına nasıl modern bir çözüm getireceği üzerine notlarım.",
+    "tarih": "20 Şubat 2026",
+    "link": "yazi-detay.html?id=1",
+    "icerik": "<p>Üniversite eğitimimiz boyunca hem benim hem de arkadaşlarımın en çok zorlandığı konulardan biri staj yeri bulmak ve bitmek bilmeyen evrak süreçlerini yönetmekti. Islak imzalar, kaybolan formlar ve hocaların onay süreçleri derken haftalarımız heba oluyordu.</p><h3>StajFlow Fikri Nasıl Doğdu?</h3><p>Bu karmaşaya bir son vermek ve süreci dijitalleştirmek için modern bir web tabanlı otomasyon geliştirmeye karar verdim. Projenin ana amacı, öğrencinin staj başvuru belgesini sisteme yüklediği an, danışman hocasının ve staj komisyonunun ekranına bildirim gitmesi ve sürecin tek tıkla dijital olarak onaylanmasıdır.</p><h3>Kullanılan Teknolojiler</h3><ul><li><b>Frontend Mimari:</b> HTML5, CSS3, JavaScript ile responsive tasarım</li><li><b>Backend ve Veritabanı:</b> Güçlü veri yönetimi için ilişkisel SQL mimarisi</li></ul><p>Şu an projenin arayüz tasarımlarını ve veritabanı şemalarını oturtma aşamasındayız. Yakında GitHub üzerinden açık kaynak olarak projenin gidişatını paylaşmaya başlayacağım. Gelişmeler için takipte kalın!</p>"
+  },
+  {
+    "id": 2,
+    "kategori": "Çözüm",
+    "resim": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop",
+    "baslik": "SQL Server 2022 Kurulumunda Alınan Sık Hatalar ve Çözümleri",
+    "ozet": "Özellikle veritabanı dersleri ve projeler için SQL Server 2022 kurarken karşılaşılan bağlantı hataları, servis sorunları ve bunların en hızlı çözüm yolları.",
+    "tarih": "15 Şubat 2026",
+    "link": "yazi-detay.html?id=2",
+    "icerik": "<p>Birçok öğrenci arkadaşımın ve benim projelerimizde en çok başımızı ağrıtan şey, kod yazmak değil ortam kurmaktır. SQL Server 2022 kurulumu sırasında özellikle <b>Error 40 (Named Pipes/TCP IP)</b> hatası sıkça karşımıza çıkar.</p><h3>Hatanın Kaynağı Nedir?</h3><p>Bu hata, SQL Server'ın varsayılan olarak dışarıdan gelen TCP/IP bağlantılarına kapalı olarak kurulmasından kaynaklanır. Özellikle C# veya Node.js ile veritabanına bağlanmaya çalıştığınızda sunucu yanıt vermez.</p><h3>Kesin Çözüm Adımları</h3><ol><li>Başlat menüsünden <b>SQL Server Configuration Manager</b> aracını yönetici olarak çalıştırın.</li><li>Sol menüden <i>SQL Server Network Configuration</i> tabını genişletin.</li><li><i>Protocols for MSSQLSERVER</i> (veya kendi instance adınız) seçeneğine tıklayın.</li><li>Sağ taraftaki listede <b>TCP/IP</b> protokolünün durumunu 'Disabled' konumundan <b>'Enabled'</b> konumuna getirin.</li><li>Son olarak <i>SQL Server Services</i> sekmesine gidip servisinize sağ tıklayarak <b>Restart</b> deyin.</li></ol><p>Bu basit ayar, veritabanı bağlantı sorunlarınızın %90'ını çözecektir.</p>"
+  },
+  {
+    "id": 3,
+    "kategori": "Eğitim",
+    "resim": "https://images.unsplash.com/photo-1580234811432-5202e531c100?q=80&w=800&auto=format&fit=crop",
+    "baslik": "Unity ile 3D Mobil Oyuna Giriş: Stack Mekanikleri",
+    "ozet": "C# ve Unity kullanarak Arcade Idle tarzı ve özellikle 3D Stack (Kule dizme) oyun mekaniklerini kodlarken dikkat edilmesi gereken fizik ve optimizasyon kuralları.",
+    "tarih": "05 Şubat 2026",
+    "link": "yazi-detay.html?id=3",
+    "icerik": "<p>Mobil oyun dünyasında 'Hypercasual' türünün en çok sevilen mekaniklerinden biri blokları üst üste kusursuzca dizmeye çalıştığımız 'Stack' (Kule) oyunlarıdır. Şu sıralar üzerinde çalıştığım projede bu mekaniğin arka planını Unity ve C# ile nasıl kurguladığımı anlatmak istiyorum.</p><h3>Blok Hareketi ve Kesme Mantığı</h3><p>Oyundaki temel zorluk, sağdan veya soldan gelen bloğu tam önceki bloğun üzerinde durdurmaktır. Kullanıcı ekrana dokunduğunda hareket durur ve bir C# scripti önceki bloğun pozisyonu (Transform) ile yeni bloğun pozisyonunu karşılaştırır.</p><pre style='background:#161b22; color:#06d6a0; padding:15px; border-radius:8px;'><code>float fark = simdikiBlok.transform.position.z - oncekiBlok.transform.position.z;\nif(Mathf.Abs(fark) < 0.1f) {\n    // Kusursuz eşleşme (Perfect)\n} else {\n    // Dışarıda kalan kısmı hesapla ve kes (Slice)\n}</code></pre><p>Burada <b>Instantiate</b> fonksiyonu ile dışarıda kalan parçayı yeni bir nesne olarak yaratıp içine <i>Rigidbody</i> ekliyoruz ki, fizik kuralları gereği aşağıya doğru düşsün. Oyun motorunda bu tarz matematiksel işlemleri <i>Update</i> yerine dokunma eventlerine bağlamak, mobil cihazlarda performansı ciddi anlamda artırır.</p>"
+  },
+  {
+    "id": 4,
+    "kategori": "Eğitim",
+    "resim": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop",
+    "baslik": "C# ile Masaüstü OBS (Öğrenci Bilgi Sistemi) Geliştirmek",
+    "ozet": "Veritabanı bağlantılı, detaylı bir mimariye sahip masaüstü uygulaması geliştirirken kod mimarisini nasıl kurguladım? Docker ve SQL entegrasyonu detayları.",
+    "tarih": "25 Ocak 2026",
+    "link": "yazi-detay.html?id=4",
+    "icerik": "<p>Bilgisayar Programcılığı eğitimim süresince teorik bilgileri pratiğe dökmenin en iyi yolunun kapsamlı bir proje geliştirmek olduğuna karar verdim. C# Windows Forms kullanarak geliştirdiğim <b>Öğrenci Bilgi Sistemi (OBS)</b>, sadece veri giriş-çıkışı yapan bir form uygulaması değil, arka planda sağlam bir SQL mimarisi barındıran profesyonel bir otomasyon çözümüdür.</p><h3>1. Projenin Teknik Altyapısı</h3><p>Proje, <b>N-Katmanlı Mimari</b> (N-Tier Architecture) mantığına uygun olarak geliştirildi. Bu sayede veritabanı işlemleri, iş mantığı ve arayüz birbirinden ayrılarak kodun okunabilirliği ve yönetilebilirliği artırıldı.</p><ul><li><b>Dil & Framework:</b> C# / .NET Framework</li><li><b>Arayüz:</b> Windows Forms (Modern UI kütüphaneleri ile destekli)</li><li><b>Veritabanı:</b> MS SQL Server 2022</li><li><b>Veri Erişimi:</b> ADO.NET (SqlDataReader ve SqlCommand yapıları)</li></ul><h3>2. Veritabanı İlişkileri ve SQL Prosedürleri</h3><p>Veritabanı tasarımında <b>Normalizasyon</b> kurallarına sıkı sıkıya uyuldu. Öğrenciler, Dersler, Akademisyenler ve Notlar tabloları Primary Key ve Foreign Key ilişkileriyle birbirine bağlandı.</p><p>Özellikle not hesaplamaları ve transkript sorguları için C# tarafında karmaşık kodlar yazmak yerine, SQL tarafında <b>Stored Procedures (Saklı Yordamlar)</b> ve <b>Triggers (Tetikleyiciler)</b> kullanılarak performans optimize edildi.</p><h3>3. OOP (Nesne Yönelimli Programlama) Kullanımı</h3><p>Projede 'Generic Repository' deseni ve 'Singleton' tasarım kalıbı kullanılarak veritabanı bağlantı nesnesinin bellekte gereksiz yer kaplaması engellendi. Her bir tablo (Entity) için C# tarafında karşılık gelen sınıflar oluşturuldu (Encapsulation).</p><pre style='background:#161b22; color:#06d6a0; padding:15px; border-radius:8px;'><code>// Veritabanı Bağlantı Sınıfı Örneği\npublic static class Baglanti {\n    private static SqlConnection con;\n    public static SqlConnection GetConnection() {\n        if (con == null) {\n            con = new SqlConnection('Server=.;Database=OBS_DB;Integrated Security=true');\n        }\n        return con;\n    }\n}</code></pre><h3>4. Güvenlik ve Yetkilendirme</h3><p>Sisteme giriş yapan kullanıcının rolüne göre (Admin, Öğrenci, Akademisyen) arayüz dinamik olarak değişmektedir. Ayrıca şifreler veritabanında düz metin olarak değil, <b>SHA-256</b> algoritması ile hashlenerek saklanmaktadır.</p><h3>Sonuç ve Gelecek Hedefler</h3><p>Bu proje sayesinde masaüstü yazılım geliştirme süreçlerine tam hakimiyet sağladım. Bir sonraki aşamada bu sistemi .NET Core ile Web API haline getirip, React ile geliştireceğim web arayüzüne bağlamayı hedefliyorum.</p>"
+  }
+]

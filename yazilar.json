@@ -2,41 +2,41 @@
   {
     "id": 1,
     "kategori": "Haber",
-    "resim": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "resim": "./1.png",
     "baslik": "StajFlow Projesi: Üniversite Staj Süreçlerini Dijitalleştiriyoruz",
     "ozet": "Geliştirmekte olduğumuz StajFlow projesinin çıkış hikayesi, mimarisi ve üniversitelerdeki staj atama sorunlarına nasıl modern bir çözüm getireceği üzerine notlarım.",
     "tarih": "20 Şubat 2026",
     "link": "yazi-detay.html?id=1",
-    "icerik": "<p>Üniversite eğitimimiz boyunca hem benim hem de arkadaşlarımın en çok zorlandığı konulardan biri staj yeri bulmak ve bitmek bilmeyen evrak süreçlerini yönetmekti. Islak imzalar, kaybolan formlar ve hocaların onay süreçleri derken haftalarımız heba oluyordu.</p><h3>StajFlow Fikri Nasıl Doğdu?</h3><p>Bu karmaşaya bir son vermek ve süreci dijitalleştirmek için modern bir web tabanlı otomasyon geliştirmeye karar verdim. Projenin ana amacı, öğrencinin staj başvuru belgesini sisteme yüklediği an, danışman hocasının ve staj komisyonunun ekranına bildirim gitmesi ve sürecin tek tıkla dijital olarak onaylanmasıdır.</p><h3>Kullanılan Teknolojiler</h3><ul><li><b>Frontend Mimari:</b> HTML5, CSS3, JavaScript ile responsive tasarım</li><li><b>Backend ve Veritabanı:</b> Güçlü veri yönetimi için ilişkisel SQL mimarisi</li></ul><p>Şu an projenin arayüz tasarımlarını ve veritabanı şemalarını oturtma aşamasındayız. Yakında GitHub üzerinden açık kaynak olarak projenin gidişatını paylaşmaya başlayacağım. Gelişmeler için takipte kalın!</p>"
+    "icerik": "<p>Üniversite eğitimimiz boyunca staj yeri bulmak ve evrak süreçlerini yönetmek büyük sorundu. Bu projeyle süreçleri tamamen dijitalleştiriyoruz.</p><h3>Kullanılan Teknolojiler</h3><ul><li>Frontend: HTML, CSS, JS</li><li>Backend: SQL Mimari</li></ul>"
   },
   {
     "id": 2,
     "kategori": "Çözüm",
-    "resim": "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "resim": "./4.png",
     "baslik": "SQL Server 2022 Kurulumunda Alınan Sık Hatalar ve Çözümleri",
-    "ozet": "Özellikle veritabanı dersleri ve projeler için SQL Server 2022 kurarken karşılaşılan bağlantı hataları, servis sorunları ve bunların en hızlı çözüm yolları.",
+    "ozet": "Özellikle veritabanı dersleri ve projeler için SQL Server 2022 kurarken karşılaşılan bağlantı hataları (Error 40) ve çözüm yolları.",
     "tarih": "15 Şubat 2026",
     "link": "yazi-detay.html?id=2",
-    "icerik": "<p>Birçok öğrenci arkadaşımın ve benim projelerimizde en çok başımızı ağrıtan şey, kod yazmak değil ortam kurmaktır. SQL Server 2022 kurulumu sırasında özellikle <b>Error 40 (Named Pipes/TCP IP)</b> hatası sıkça karşımıza çıkar.</p><h3>Hatanın Kaynağı Nedir?</h3><p>Bu hata, SQL Server'ın varsayılan olarak dışarıdan gelen TCP/IP bağlantılarına kapalı olarak kurulmasından kaynaklanır. Özellikle C# veya Node.js ile veritabanına bağlanmaya çalıştığınızda sunucu yanıt vermez.</p><h3>Kesin Çözüm Adımları</h3><ol><li>Başlat menüsünden <b>SQL Server Configuration Manager</b> aracını yönetici olarak çalıştırın.</li><li>Sol menüden <i>SQL Server Network Configuration</i> tabını genişletin.</li><li><i>Protocols for MSSQLSERVER</i> (veya kendi instance adınız) seçeneğine tıklayın.</li><li>Sağ taraftaki listede <b>TCP/IP</b> protokolünün durumunu 'Disabled' konumundan <b>'Enabled'</b> konumuna getirin.</li><li>Son olarak <i>SQL Server Services</i> sekmesine gidip servisinize sağ tıklayarak <b>Restart</b> deyin.</li></ol><p>Bu basit ayar, veritabanı bağlantı sorunlarınızın %90'ını çözecektir.</p>"
+    "icerik": "<p>SQL Server kurulumunda sıkça alınan Error 40 hatasının çözümü için TCP/IP ayarlarını yapılandırmanız gerekir. SQL Configuration Manager üzerinden protokolleri aktif etmeyi unutmayın.</p>"
   },
   {
     "id": 3,
     "kategori": "Eğitim",
-    "resim": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "resim": "./2.png",
     "baslik": "Unity ile 3D Mobil Oyuna Giriş: Stack Mekanikleri",
-    "ozet": "C# ve Unity kullanarak Arcade Idle tarzı ve özellikle 3D Stack (Kule dizme) oyun mekaniklerini kodlarken dikkat edilmesi gereken fizik ve optimizasyon kuralları.",
+    "ozet": "C# ve Unity kullanarak Arcade Idle tarzı ve özellikle 3D Stack (Kule dizme) oyun mekaniklerini kodlarken dikkat edilmesi gereken fizik kuralları.",
     "tarih": "05 Şubat 2026",
     "link": "yazi-detay.html?id=3",
-    "icerik": "<p>Mobil oyun dünyasında 'Hypercasual' türünün en çok sevilen mekaniklerinden biri blokları üst üste kusursuzca dizmeye çalıştığımız 'Stack' (Kule) oyunlarıdır. Şu sıralar üzerinde çalıştığım projede bu mekaniğin arka planını Unity ve C# ile nasıl kurguladığımı anlatmak istiyorum.</p><h3>Blok Hareketi ve Kesme Mantığı</h3><p>Oyundaki temel zorluk, sağdan veya soldan gelen bloğu tam önceki bloğun üzerinde durdurmaktır. Kullanıcı ekrana dokunduğunda hareket durur ve bir C# scripti önceki bloğun pozisyonu (Transform) ile yeni bloğun pozisyonunu karşılaştırır.</p><pre style='background:#161b22; color:#06d6a0; padding:15px; border-radius:8px;'><code>float fark = simdikiBlok.transform.position.z - oncekiBlok.transform.position.z;\nif(Mathf.Abs(fark) < 0.1f) {\n    // Kusursuz eşleşme (Perfect)\n} else {\n    // Dışarıda kalan kısmı hesapla ve kes (Slice)\n}</code></pre><p>Burada <b>Instantiate</b> fonksiyonu ile dışarıda kalan parçayı yeni bir nesne olarak yaratıp içine <i>Rigidbody</i> ekliyoruz ki, fizik kuralları gereği aşağıya doğru düşsün. Oyun motorunda bu tarz matematiksel işlemleri <i>Update</i> yerine dokunma eventlerine bağlamak, mobil cihazlarda performansı ciddi anlamda artırır.</p>"
+    "icerik": "<p>Mobil oyunlarda popüler olan Stack mekaniğini Unity'de kurarken nesnelerin üst üste tam oturması için matematiksel hesaplamalar ve Rigidbody fiziği kullanılır.</p>"
   },
   {
     "id": 4,
     "kategori": "Eğitim",
-    "resim": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "resim": "./3.png",
     "baslik": "C# ile Masaüstü OBS (Öğrenci Bilgi Sistemi) Geliştirmek",
-    "ozet": "Veritabanı bağlantılı, detaylı bir mimariye sahip masaüstü uygulaması geliştirirken kod mimarisini nasıl kurguladım? Docker ve SQL entegrasyonu detayları.",
+    "ozet": "Veritabanı bağlantılı, detaylı bir mimariye sahip masaüstü uygulaması geliştirirken kod mimarisini nasıl kurguladım? N-Katmanlı mimari detayları.",
     "tarih": "25 Ocak 2026",
     "link": "yazi-detay.html?id=4",
-    "icerik": "<p>Bilgisayar Programcılığı eğitimim süresince teorik bilgileri pratiğe dökmenin en iyi yolunun kapsamlı bir proje geliştirmek olduğuna karar verdim. C# Windows Forms kullanarak geliştirdiğim <b>Öğrenci Bilgi Sistemi (OBS)</b>, sadece veri giriş-çıkışı yapan bir form uygulaması değil, arka planda sağlam bir SQL mimarisi barındıran profesyonel bir otomasyon çözümüdür.</p><h3>1. Projenin Teknik Altyapısı</h3><p>Proje, <b>N-Katmanlı Mimari</b> (N-Tier Architecture) mantığına uygun olarak geliştirildi. Bu sayede veritabanı işlemleri, iş mantığı ve arayüz birbirinden ayrılarak kodun okunabilirliği ve yönetilebilirliği artırıldı.</p><ul><li><b>Dil & Framework:</b> C# / .NET Framework</li><li><b>Arayüz:</b> Windows Forms (Modern UI kütüphaneleri ile destekli)</li><li><b>Veritabanı:</b> MS SQL Server 2022</li><li><b>Veri Erişimi:</b> ADO.NET (SqlDataReader ve SqlCommand yapıları)</li></ul><h3>2. Veritabanı İlişkileri ve SQL Prosedürleri</h3><p>Veritabanı tasarımında <b>Normalizasyon</b> kurallarına sıkı sıkıya uyuldu. Öğrenciler, Dersler, Akademisyenler ve Notlar tabloları Primary Key ve Foreign Key ilişkileriyle birbirine bağlandı.</p><p>Özellikle not hesaplamaları ve transkript sorguları için C# tarafında karmaşık kodlar yazmak yerine, SQL tarafında <b>Stored Procedures (Saklı Yordamlar)</b> ve <b>Triggers (Tetikleyiciler)</b> kullanılarak performans optimize edildi.</p><h3>3. OOP (Nesne Yönelimli Programlama) Kullanımı</h3><p>Projede 'Generic Repository' deseni ve 'Singleton' tasarım kalıbı kullanılarak veritabanı bağlantı nesnesinin bellekte gereksiz yer kaplaması engellendi. Her bir tablo (Entity) için C# tarafında karşılık gelen sınıflar oluşturuldu (Encapsulation).</p><pre style='background:#161b22; color:#06d6a0; padding:15px; border-radius:8px;'><code>// Veritabanı Bağlantı Sınıfı Örneği\npublic static class Baglanti {\n    private static SqlConnection con;\n    public static SqlConnection GetConnection() {\n        if (con == null) {\n            con = new SqlConnection('Server=.;Database=OBS_DB;Integrated Security=true');\n        }\n        return con;\n    }\n}</code></pre><h3>4. Güvenlik ve Yetkilendirme</h3><p>Sisteme giriş yapan kullanıcının rolüne göre (Admin, Öğrenci, Akademisyen) arayüz dinamik olarak değişmektedir. Ayrıca şifreler veritabanında düz metin olarak değil, <b>SHA-256</b> algoritması ile hashlenerek saklanmaktadır.</p><h3>Sonuç ve Gelecek Hedefler</h3><p>Bu proje sayesinde masaüstü yazılım geliştirme süreçlerine tam hakimiyet sağladım. Bir sonraki aşamada bu sistemi .NET Core ile Web API haline getirip, React ile geliştireceğim web arayüzüne bağlamayı hedefliyorum.</p>"
+    "icerik": "<p>C# Windows Forms ve SQL Server kullanarak geliştirdiğim OBS projesinde N-Katmanlı mimari kullandım. Bu sayede veritabanı ve arayüz birbirinden bağımsız çalışabiliyor.</p>"
   }
 ]

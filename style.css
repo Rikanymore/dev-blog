@@ -1,0 +1,565 @@
+/* --- Temel Ayarlar ve Renk Değişkenleri --- */
+:root {
+    --bg-dark: #0d1117;
+    --bg-card: #161b22;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --accent-pink: #ff477e;
+    --accent-cyan: #06d6a0;
+    --border-color: #30363d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Navigasyon --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(13, 17, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo .bracket { color: var(--accent-cyan); }
+.logo .slash { color: var(--accent-pink); }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-cyan);
+}
+
+/* --- Hero Section (Karşılama) --- */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: radial-gradient(circle at top, #161b22 0%, #0d1117 70%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero .highlight {
+    background: linear-gradient(90deg, var(--accent-pink), var(--accent-cyan));
+    -webkit-background-clip: text;
+    background-clip: text; /* VS Code'u mutlu eden satır */
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+/* Sosyal İkonlar */
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-pink);
+    transform: translateY(-3px);
+}
+
+/* --- Ana İçerik ve Filtreler --- */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0 30px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--accent-cyan);
+    color: #000;
+    border-color: var(--accent-cyan);
+}
+
+/* --- Blog Grid Düzeni --- */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding-bottom: 80px;
+}
+
+/* --- Blog Kartları Tasarımı --- */
+.blog-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(6, 214, 160, 0.15); /* Neon yeşil parlama */
+    border-color: var(--accent-cyan);
+}
+
+.blog-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.blog-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.blog-category {
+    font-size: 0.8rem;
+    color: var(--accent-pink);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.blog-title {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.blog-excerpt {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+.blog-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.read-more {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #fff;
+}
+
+/* --- Hakkımda Bölümü Tasarımı --- */
+.about-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-cyan);
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(6, 214, 160, 0.2);
+}
+
+.about-content h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.about-content p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: var(--accent-pink);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #fff;
+    color: var(--bg-dark);
+    transform: translateY(-3px);
+}
+
+/* Mobilde alt alta düzgün görünmesi için */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+}
+
+/* --- Kullandığım Teknolojiler Bölümü --- */
+.tech-stack-section {
+    margin: 40px auto 80px auto;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tech-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+    cursor: default;
+    min-width: 180px;
+}
+
+.tech-card i {
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Üzerine gelince neon parlama efekti */
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 71, 126, 0.15); /* Pembe parlama */
+    border-color: var(--accent-pink);
+    color: #fff;
+}
+
+.tech-card:hover i {
+    transform: scale(1.1);
+}
+
+/* Unity ve C# gibi kartların farklı renklerde parlaması için ufak detaylar */
+.tech-card:nth-child(even):hover {
+    box-shadow: 0 10px 20px rgba(6, 214, 160, 0.15); /* Camgöbeği parlama */
+    border-color: var(--accent-cyan);
+}
+
+/* --- Öne Çıkan Projelerim Bölümü --- */
+.projects-section {
+    margin: 60px auto;
+}
+
+.github-link {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.github-link:hover {
+    color: #fff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 71, 126, 0.15);
+    border-color: var(--accent-pink);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tag-web { background-color: rgba(6, 214, 160, 0.1); color: var(--accent-cyan); }
+.tag-game { background-color: rgba(255, 71, 126, 0.1); color: var(--accent-pink); }
+.tag-tool { background-color: rgba(247, 223, 30, 0.1); color: #f7df1e; }
+
+.project-info h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-demo {
+    background-color: var(--accent-cyan);
+    color: var(--bg-dark);
+}
+
+.btn-demo:hover {
+    background-color: #fff;
+}
+
+.btn-github {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+}
+
+.btn-github:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* --- Gelişim Serüvenim (Timeline) Bölümü --- */
+.timeline-section {
+    margin: 80px auto;
+    max-width: 800px; /* Çok geniş olmaması okumayı kolaylaştırır */
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+/* Soldaki Dikey Çizgi */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Parlayan Noktalar */
+.timeline-dot {
+    position: absolute;
+    left: -40px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: var(--bg-card);
+    border: 3px solid;
+}
+
+.pink-glow {
+    border-color: var(--accent-pink);
+    box-shadow: 0 0 15px rgba(255, 71, 126, 0.6);
+}
+
+.cyan-glow {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(6, 214, 160, 0.6);
+}
+
+/* İçerik Kutuları */
+.timeline-content {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-date {
+    display: inline-block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-content h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.timeline-content p {
+    color: var(--text-main);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}

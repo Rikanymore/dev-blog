@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devamını Oku | CodeOguz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Sadece bu sayfaya özel birkaç CSS ayarı */
+        .article-container { max-width: 800px; margin: 50px auto; padding: 0 20px; }
+        .article-header { text-align: center; margin-bottom: 40px; }
+        .article-title { font-size: 2.5rem; margin-bottom: 15px; color: #fff; }
+        .article-meta { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 30px; }
+        .article-meta span { margin: 0 10px; }
+        .article-image { width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin-bottom: 40px; }
+        .article-body { font-size: 1.1rem; line-height: 1.8; color: var(--text-main); }
+        .article-body h3 { color: var(--accent-cyan); margin: 30px 0 15px 0; }
+        .back-btn { display: inline-block; margin-bottom: 30px; color: var(--accent-pink); text-decoration: none; font-weight: 600; }
+        .back-btn:hover { color: #fff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="bracket">&lt;</span>CodeOguz <span class="slash">/</span><span class="bracket">&gt;</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-container">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Geri Dön</a>
+        
+        <div id="makale-alani">
+            <p style="text-align: center; color: var(--text-muted);">Makale yükleniyor...</p>
+        </div>
+    </main>
+
+    <script src="./detay.js"></script>
+</body>
+</html>

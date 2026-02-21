@@ -9,22 +9,35 @@ document.addEventListener("DOMContentLoaded", () => {
                 const yazi = yazilar.find(y => y.id == id);
                 
                 if (yazi) {
-                    document.getElementById('detay-kategori').textContent = yazi.kategori;
-                    document.getElementById('detay-baslik').textContent = yazi.baslik;
-                    document.getElementById('detay-tarih').textContent = yazi.tarih;
+                    // Hata Korumalı Atamalar (Element yoksa kodu çökertmez, atlar)
+                    const kategoriEl = document.getElementById('detay-kategori');
+                    if (kategoriEl) kategoriEl.textContent = yazi.kategori;
+
+                    const baslikEl = document.getElementById('detay-baslik');
+                    if (baslikEl) baslikEl.textContent = yazi.baslik;
+
+                    const tarihEl = document.getElementById('detay-tarih');
+                    if (tarihEl) tarihEl.textContent = yazi.tarih;
                     
-                    // İŞTE SORUNU ÇÖZEN SATIR: JSON'daki "resim" kelimesiyle eşleştirildi
-                    document.getElementById('detay-resim').src = yazi.resim;
-                    document.getElementById('detay-resim').alt = yazi.baslik;
+                    // Hem detay-resim hem de detay-gorsel ID'sini arar
+                    const resimEl = document.getElementById('detay-resim') || document.getElementById('detay-gorsel');
+                    if (resimEl) {
+                        resimEl.src = yazi.resim;
+                        resimEl.alt = yazi.baslik;
+                    }
                     
-                    document.getElementById('detay-icerik').innerHTML = yazi.icerik;
+                    const icerikEl = document.getElementById('detay-icerik');
+                    if (icerikEl) icerikEl.innerHTML = yazi.icerik;
+                    
                 } else {
-                    document.getElementById('detay-icerik').innerHTML = "<p>Yazı bulunamadı.</p>";
+                    const icerikEl = document.getElementById('detay-icerik');
+                    if (icerikEl) icerikEl.innerHTML = "<p>Yazı bulunamadı.</p>";
                 }
             })
             .catch(error => {
                 console.error("Veri çekme hatası:", error);
-                document.getElementById('detay-icerik').innerHTML = "<p>İçerik yüklenirken bir hata oluştu.</p>";
+                const icerikEl = document.getElementById('detay-icerik');
+                if (icerikEl) icerikEl.innerHTML = "<p>İçerik yüklenirken bir hata oluştu.</p>";
             });
     }
 });

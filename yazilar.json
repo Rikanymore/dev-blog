@@ -22,7 +22,7 @@
   {
     "id": 3,
     "kategori": "Eğitim",
-    "resim": "https://images.unsplash.com/photo-1580234811432-5202e531c100?q=80&w=800&auto=format&fit=crop",
+    "resim": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800&auto=format&fit=crop",
     "baslik": "Unity ile 3D Mobil Oyuna Giriş: Stack Mekanikleri",
     "ozet": "C# ve Unity kullanarak Arcade Idle tarzı ve özellikle 3D Stack (Kule dizme) oyun mekaniklerini kodlarken dikkat edilmesi gereken fizik ve optimizasyon kuralları.",
     "tarih": "05 Şubat 2026",

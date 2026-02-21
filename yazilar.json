@@ -2,7 +2,7 @@
   {
     "id": 1,
     "kategori": "Haber",
-    "resim": "./1.png",
+    "resim": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
     "baslik": "StajFlow Projesi: Üniversite Staj Süreçlerini Dijitalleştiriyoruz",
     "ozet": "Geliştirmekte olduğumuz StajFlow projesinin çıkış hikayesi, mimarisi ve üniversitelerdeki staj atama sorunlarına nasıl modern bir çözüm getireceği üzerine notlarım.",
     "tarih": "20 Şubat 2026",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "kategori": "Çözüm",
-    "resim": "./4.png",
+    "resim": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=800&auto=format&fit=crop",
     "baslik": "SQL Server 2022 Kurulumunda Alınan Sık Hatalar ve Çözümleri",
     "ozet": "Özellikle veritabanı dersleri ve projeler için SQL Server 2022 kurarken karşılaşılan bağlantı hataları (Error 40) ve çözüm yolları.",
     "tarih": "15 Şubat 2026",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "kategori": "Eğitim",
-    "resim": "./2.png",
+    "resim": "https://images.unsplash.com/photo-1616499370260-485b3e5ed653?q=80&w=800&auto=format&fit=crop",
     "baslik": "Unity ile 3D Mobil Oyuna Giriş: Stack Mekanikleri",
     "ozet": "C# ve Unity kullanarak Arcade Idle tarzı ve özellikle 3D Stack (Kule dizme) oyun mekaniklerini kodlarken dikkat edilmesi gereken fizik kuralları.",
     "tarih": "05 Şubat 2026",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "kategori": "Eğitim",
-    "resim": "./3.png",
+    "resim": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=800&auto=format&fit=crop",
     "baslik": "C# ile Masaüstü OBS (Öğrenci Bilgi Sistemi) Geliştirmek",
     "ozet": "Veritabanı bağlantılı, detaylı bir mimariye sahip masaüstü uygulaması geliştirirken kod mimarisini nasıl kurguladım? N-Katmanlı mimari detayları.",
     "tarih": "25 Ocak 2026",

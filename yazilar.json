@@ -1,42 +1,79 @@
-[
-  {
-    "id": 1,
-    "kategori": "Haber",
-    "resim": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
-    "baslik": "StajFlow Projesi: Üniversite Staj Süreçlerini Dijitalleştiriyoruz",
-    "ozet": "Geliştirmekte olduğumuz StajFlow projesinin çıkış hikayesi, mimarisi ve üniversitelerdeki staj atama sorunlarına nasıl modern bir çözüm getireceği üzerine notlarım.",
-    "tarih": "20 Şubat 2026",
-    "link": "yazi-detay.html?id=1",
-    "icerik": "<p>Üniversite eğitimimiz boyunca staj yeri bulmak ve evrak süreçlerini yönetmek büyük sorundu. Bu projeyle süreçleri tamamen dijitalleştiriyoruz.</p><h3>Kullanılan Teknolojiler</h3><ul><li>Frontend: HTML, CSS, JS</li><li>Backend: SQL Mimari</li></ul>"
-  },
-  {
-    "id": 2,
-    "kategori": "Çözüm",
-    "resim": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=800&auto=format&fit=crop",
-    "baslik": "SQL Server 2022 Kurulumunda Alınan Sık Hatalar ve Çözümleri",
-    "ozet": "Özellikle veritabanı dersleri ve projeler için SQL Server 2022 kurarken karşılaşılan bağlantı hataları (Error 40) ve çözüm yolları.",
-    "tarih": "15 Şubat 2026",
-    "link": "yazi-detay.html?id=2",
-    "icerik": "<p>SQL Server kurulumunda sıkça alınan Error 40 hatasının çözümü için TCP/IP ayarlarını yapılandırmanız gerekir. SQL Configuration Manager üzerinden protokolleri aktif etmeyi unutmayın.</p>"
-  },
-  {
-    "id": 3,
-    "kategori": "Eğitim",
-    "resim": "https://images.unsplash.com/photo-1616499370260-485b3e5ed653?q=80&w=800&auto=format&fit=crop",
-    "baslik": "Unity ile 3D Mobil Oyuna Giriş: Stack Mekanikleri",
-    "ozet": "C# ve Unity kullanarak Arcade Idle tarzı ve özellikle 3D Stack (Kule dizme) oyun mekaniklerini kodlarken dikkat edilmesi gereken fizik kuralları.",
-    "tarih": "05 Şubat 2026",
-    "link": "yazi-detay.html?id=3",
-    "icerik": "<p>Mobil oyunlarda popüler olan Stack mekaniğini Unity'de kurarken nesnelerin üst üste tam oturması için matematiksel hesaplamalar ve Rigidbody fiziği kullanılır.</p>"
-  },
-  {
-    "id": 4,
-    "kategori": "Eğitim",
-    "resim": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=800&auto=format&fit=crop",
-    "baslik": "C# ile Masaüstü OBS (Öğrenci Bilgi Sistemi) Geliştirmek",
-    "ozet": "Veritabanı bağlantılı, detaylı bir mimariye sahip masaüstü uygulaması geliştirirken kod mimarisini nasıl kurguladım? N-Katmanlı mimari detayları.",
-    "tarih": "25 Ocak 2026",
-    "link": "yazi-detay.html?id=4",
-    "icerik": "<p>C# Windows Forms ve SQL Server kullanarak geliştirdiğim OBS projesinde N-Katmanlı mimari kullandım. Bu sayede veritabanı ve arayüz birbirinden bağımsız çalışabiliyor.</p>"
-  }
-]
+<div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="project-info">
+                    <span class="project-tag tag-web">Web Projesi</span>
+                    <h3>StajFlow</h3>
+                    <p>Üniversite öğrencilerinin staj yeri atamalarını ve süreçlerini yöneten, hocalarla öğrencileri bir araya getiren modern web otomasyonu. Backend ve frontend mimarisiyle geliştirilmektedir.</p>
+                    <div class="project-links">
+                        <a href="https://stajflow.vercel.app" target="_blank" class="btn-demo"><i class="fas fa-external-link-alt"></i> Canlı Demo</a>
+                        <a href="https://github.com/codeoguz/StajFlow" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="project-info">
+                    <span class="project-tag tag-tool">Masaüstü & Veritabanı</span>
+                    <h3>Öğrenci Bilgi Sistemi (OBS)</h3>
+                    <p>C# kullanılarak geliştirilmiş, detaylı veritabanı mimarisine sahip kapsamlı masaüstü bilgi sistemi. Öğrenci, not ve ders kayıt işlemlerini SQL Server üzerinde güvenle yönetir.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/codeoguz/OBS-Sistemi" target="_blank" class="btn-demo"><i class="fas fa-desktop"></i> İncele</a>
+                        <a href="https://github.com/codeoguz/OBS-Sistemi" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1556438064-2d7646166914?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="project-info">
+                    <span class="project-tag tag-game">Oyun Geliştirme</span>
+                    <h3>3D Stack (Kule) Oyunu</h3>
+                    <p>Unity oyun motoru ve C# kullanılarak geliştirilen, oyuncuların blokları üst üste en dengeli şekilde dizmeye çalıştığı, dinamik fiziklere sahip 3D mobil arcade oyunu.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/codeoguz/3D-Stack-Game" target="_blank" class="btn-demo"><i class="fab fa-google-play"></i> İncele</a>
+                        <a href="https://github.com/codeoguz/3D-Stack-Game" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                <div class="project-info">
+                    <span class="project-tag tag-tool">Araç & Verimlilik</span>
+                    <h3>Kişisel Pomodoro Sayacı</h3>
+                    <p>DGS ve yoğun proje dönemleri için PowerShell kullanılarak sıfırdan kodlanmış, özel odaklanma aralıkları sunan masaüstü zaman yönetimi aracı.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/codeoguz/Pomodoro-Timer" target="_blank" class="btn-demo"><i class="fas fa-download"></i> İndir</a>
+                        <a href="https://github.com/codeoguz/Pomodoro-Timer" target="_blank" class="btn-github"><i class="fab fa-github"></i> Script</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                <div class="project-info">
+                    <span class="project-tag tag-web">Web Deneyimi</span>
+                    <h3>İnteraktif Dijital Hediye Serisi</h3>
+                    <p>Özel günleri dijitalleştirmek amacıyla HTML/CSS ve JS ile geliştirilmiş, 10 farklı interaktif ve kişiselleştirilmiş web tabanlı dijital hediye portfolyosu.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/codeoguz/Digital-Gifts" target="_blank" class="btn-demo"><i class="fas fa-external-link-alt"></i> İncele</a>
+                        <a href="https://github.com/codeoguz/Digital-Gifts" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                <div class="project-info">
+                    <span class="project-tag tag-web">Web Projesi</span>
+                    <h3>Geliştirici Günlüğü & Portfolyo</h3>
+                    <p>Şu an incelemekte olduğunuz bu web sitesi. Tamamen responsive, karanlık neon temalı, dinamik JSON veritabanı okuyabilen modern bir frontend mimarisi ile kodlandı.</p>
+                    <div class="project-links">
+                        <a href="index.html" class="btn-demo"><i class="fas fa-home"></i> İncele</a>
+                        <a href="https://github.com/codeoguz/dev-blog" target="_blank" class="btn-github"><i class="fab fa-github"></i> Kodlar</a>
+                    </div>
+                </div>
+            </div>
+        </div>

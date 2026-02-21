@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.classList.add('blog-card');
             card.innerHTML = `
-                <img src="${yazi.gorsel}" alt="${yazi.baslik}" class="blog-image">
+                <img src="${yazi.resim}" alt="${yazi.baslik}" class="blog-image">
                 <div class="blog-content">
                     <span class="blog-category">${yazi.kategori}</span>
                     <h3 class="blog-title">${yazi.baslik}</h3>
@@ -62,6 +62,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    
 });
